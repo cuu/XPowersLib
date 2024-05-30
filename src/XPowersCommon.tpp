@@ -128,7 +128,7 @@ public:
         __scl = scl;
         __wire = &w;
 #if defined(ARDUINO_ARCH_RP2040) || defined(ARDUINO_ARCH_STM32)
-        __wire->end();
+        //__wire->end();
         __wire->setSDA(__sda);
         __wire->setSCL(__scl);
         __wire->begin();
